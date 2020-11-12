@@ -1,0 +1,8 @@
+npm-debug.log
+node_modules
+public
+.DS_Store
+rev-manifest.json
+config.gypi
+src
+package-lock.json
