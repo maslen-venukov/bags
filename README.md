@@ -10,6 +10,8 @@
 
 Установка
 --------------------
-<git clone https://github.com/maslen-venukov/bags.git >
+- Клонировать репозиторий
 
-<npm i >
+  > git clone https://github.com/maslen-venukov/bags.git
+
+- npm i
