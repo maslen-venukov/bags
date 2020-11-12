@@ -10,6 +10,6 @@
 
 Установка
 --------------------
-< git clone https://github.com/maslen-venukov/bags.git >
+<git clone https://github.com/maslen-venukov/bags.git >
 
-< npm i >
+<npm i >
