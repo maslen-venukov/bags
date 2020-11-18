@@ -2,11 +2,7 @@
 ====================
 В проекте применяется компонентный подход
 --------------------
-Для сборки HTML используется Gulp плагин FileInclude
-
-Для SASS - SASS @import
-
-Для JS - Webpack + import
+Gulp, Sass, Webpack, FileInclude
 
 Установка
 --------------------
