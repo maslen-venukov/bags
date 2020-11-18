@@ -4,5 +4,5 @@ public
 .DS_Store
 rev-manifest.json
 config.gypi
-src
+dist
 package-lock.json

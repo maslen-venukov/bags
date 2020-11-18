@@ -1,0 +1,205 @@
+<div class="catalog__grid grid">
+  <h2 class="grid__title">Категория 1</h2>
+  <p class="grid__quantity">5 021 товара</p>
+  <form class="grid__choices choices">
+    <fieldset class="choices__fieldset">
+      <legend class="choices__legend">Цена</legend>
+      <div class="choices__dropdown">
+        <div class="choices__range-slider range-slider">
+          <span class="range-slider__min">0 руб</span>
+          <span class="range-slider__max">100000 руб</span>
+          <input class="range-slider__input" value="0" min="0" max="100000" step="500" type="range">
+          <input class="range-slider__input" value="100000" min="0" max="100000" step="500" type="range">
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="choices__fieldset">
+      <legend class="choices__legend">Размер</legend>
+      <div class="choices__dropdown">
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="size" value="small">
+          Маленький
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="size" value="medium">
+          Средний
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="size" value="large">
+          Большой
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="choices__fieldset">
+      <legend class="choices__legend">Бренд</legend>
+      <div class="choices__dropdown">
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="brand" value="famous">
+          Известный
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="brand" value="unknown">
+          Неизвестный
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="choices__fieldset">
+      <legend class="choices__legend">Состав</legend>
+      <div class="choices__dropdown">
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="composition" value="leather">
+          Кожа
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="composition" value="suede">
+          Замша
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="composition" value="metall">
+          Металл
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="composition" value="cotton">
+          Хлопок
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="composition" value="plastic">
+          Пластик
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="choices__fieldset">
+      <legend class="choices__legend">Цвет</legend>
+      <div class="choices__dropdown">
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="color" value="black">
+          Черный
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="color" value="white">
+          Белый
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="color" value="red">
+          Красный
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="color" value="green">
+          Зеленый
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="color" value="blue">
+          Синий
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="color" value="yellow">
+          Желтый
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="choices__fieldset">
+      <legend class="choices__legend">Страна</legend>
+      <div class="choices__dropdown">
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="country" value="russia">
+          Россия
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="country" value="italy">
+          Италия
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="country" value="poland">
+          Польша
+        </label>
+        <label class="choices__label">
+          <input class="choices__input" type="checkbox" name="country" value="china">
+          Китай
+        </label>
+      </div>
+    </fieldset>
+  </form>
+  <ul class="grid__list">
+    <li class="grid__item">
+      @include('_card.html', {
+        "delivery": 14,
+        "rating": 3,
+        "img": "img/product-1.jpg",
+        "price": "15.000 руб",
+        "name": "Bei der Erstellung"
+      })
+    </li>
+    <li class="grid__item">
+      @include('_card.html', {
+        "delivery": 5,
+        "rating": 4,
+        "img": "img/product-2.jpg",
+        "price": "1.000 руб",
+        "name": "Des Generators"
+      })
+    </li>
+    <li class="grid__item">
+      @include('_card.html', {
+        "delivery": 2,
+        "rating": 5,
+        "img": "img/product-1.jpg",
+        "price": "2.500 руб",
+        "name": "Haben Wir Einen"
+      })
+    </li>
+    <li class="grid__item">
+      @include('_card.html', {
+        "delivery": 7,
+        "rating": 3,
+        "img": "img/product-2.jpg",
+        "price": "3.500 руб",
+        "name": "Le Site Fishtext"
+      })
+    </li>
+    <li class="grid__item">
+      @include('_card.html', {
+        "delivery": 10,
+        "rating": 3,
+        "img": "img/product-1.jpg",
+        "price": "8.000 руб",
+        "name": "Lors De La Creation"
+      })
+    </li>
+    <li class="grid__item">
+      @include('_card.html', {
+        "delivery": 3,
+        "rating": 4,
+        "img": "img/product-2.jpg",
+        "price": "10.000 руб",
+        "name": "Qui Seme La Confusion"
+      })
+    </li>
+    <li class="grid__item">
+      @include('_card.html', {
+        "delivery": 13,
+        "rating": 5,
+        "img": "img/product-1.jpg",
+        "price": "4.500 руб",
+        "name": "Chez Certaines Personnes"
+      })
+    </li>
+    <li class="grid__item">
+      @include('_card.html', {
+        "delivery": 4,
+        "rating": 2,
+        "img": "img/product-2.jpg",
+        "price": "5.500 руб",
+        "name": "Russe Remplira"
+      })
+    </li>
+    <li class="grid__item">
+      @include('_card.html', {
+        "delivery": 6,
+        "rating": 4,
+        "img": "img/product-1.jpg",
+        "price": "4.000 руб",
+        "name": "Vivant Pour La Perception Visuelle Auditive"
+      })
+    </li>
+  </ul>
+</div>

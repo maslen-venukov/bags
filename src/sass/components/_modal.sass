@@ -1,0 +1,94 @@
+.modal
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+  width: 100vw
+  height: 100vh
+  transition: opacity .2s, visibility .2s
+  &--active
+    opacity: 1
+    visibility: visible
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background: rgba(#000, .5)
+    overflow-y: scroll
+  &__inner
+    position: relative
+    width: 100%
+    max-width: 760px
+    background: #fff
+    border-radius: 5px
+    padding: 75px
+    margin: 15px
+  &__close
+    position: absolute
+    top: 42px
+    right: 36px
+    width: 39px
+    height: 41px
+    background: url(../img/icons/close.svg) center / cover no-repeat
+  &__title
+    font-size: 24px
+    font-weight: 400
+    color: #333
+    text-align: center
+    margin-bottom: 60px
+  &__form
+    display: flex
+    flex-wrap: wrap
+  &__input,
+  &__select
+    font-weight: 300
+    color: #000
+    border: 1px solid #c4c4c4
+    border-radius: 8px
+    margin-bottom: 25px
+    overflow: hidden
+    &::placeholder
+      color: rgba(#333, .5)
+  &__input
+    flex-basis: 100%
+    padding: 25px
+    &:last-of-type
+      margin-bottom: 70px
+  &__select
+    position: relative
+    flex-basis: 49%
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      right: 25px
+      transform: translateY(-50%)
+      width: 16px
+      height: 7px
+      background: url(../img/icons/angle-down.svg) center / cover no-repeat
+    &:not(:nth-of-type(2n))
+      margin-right: 2%
+    select
+      font-weight: 300
+      width: 100%
+      background: #fff
+      padding: 25px
+      cursor: pointer
+      color: rgba(#333, .5)
+    option
+      color: rgba(#232323, .8)
+      &:first-child
+        display: none
+  &__btn
+    flex-basis: 100%
+    color: #fff
+    background: $accent
+    padding: 25px
+    border-radius: 8px

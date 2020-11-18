@@ -1,0 +1,74 @@
+.card
+  position: relative
+  height: 100%
+  display: flex
+  flex-direction: column
+  background: #fff
+  box-shadow: 0 0 4px rgba(#000, .25)
+  padding: 20px
+  &__rating
+    position: absolute
+    top: 20px
+    left: 20px
+  &__like
+    position: absolute
+    top: 20px
+    right: 20px
+    svg
+      fill: #d7d7d7
+  &__img
+    display: block
+    height: 200px
+    margin: 20px 0 30px
+    img
+      width: 100%
+      height: 100%
+  &__price
+    font-weight: 700
+    color: $accent
+    margin-bottom: 10px
+  &__name
+    font-size: 12px
+    font-weight: 700
+    color: #000
+    text-transform: uppercase
+    margin-bottom: 30px
+  &__btns
+    display: flex
+    justify-content: space-between
+    margin-top: auto
+  &__basket
+    flex-basis: 50%
+    font-size: 14px
+    font-weight: 500
+    color: #fff
+    background: $accent
+    padding: 11px 0
+    margin-right: 8px
+  &__more
+    flex-basis: 50%
+    font-size: 14px
+    color: $accent
+    border: 1px solid $accent
+
+.rating
+  display: flex
+  flex-direction: row-reverse
+  svg
+    width: 11px
+    height: 11px
+    fill: none
+    stroke: #ffc700
+    stroke-width: 1px
+    &:not(:last-child)
+      margin-left: 3px
+
+.like
+  svg
+    display: block
+    width: 29px
+    height: 25px
+    transition: fill .2s
+  &--liked
+    svg
+      fill: $accent

@@ -1,0 +1,51 @@
+.types
+  margin-bottom: 60px
+  &__inner
+    display: flex
+    justify-content: space-between
+  &__categories
+    flex-basis: 23%
+  &__content
+    flex-basis: 74%
+  &__list
+    display: flex
+    flex-wrap: wrap
+  &__item
+    flex-basis: 49%
+    &:not(:nth-child(2n))
+      margin-right: 2%
+    &:not(:nth-last-child(-n + 2))
+      margin-bottom: 18px
+
+.types-item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 10px
+  border: 1px solid #c4c4c4
+  &__img
+    flex-shrink: 0
+    width: 140px
+    height: 140px
+    margin-right: 20px
+    img
+      width: 100%
+      height: 100%
+  &__name
+    font-size: 24px
+    font-weight: 500
+    margin-bottom: 15px
+  &__text
+    font-size: 16px
+    font-weight: 300
+
+.categories
+  display: flex
+  flex-direction: column
+  &__btn
+    font-size: 16px
+    text-align: left
+    padding: 12px 30px
+    border: 1px solid $text
+    &:not(:last-child)
+      margin-bottom: 8px

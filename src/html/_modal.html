@@ -1,0 +1,36 @@
+<div class="modal">
+  <div class="modal__overlay">
+    <div class="modal__inner">
+
+      <button class="modal__close" aria-label="Закрыть"></button>
+
+      <h2 class="modal__title">Для заказа заполните данные</h2>
+
+      <form method="POST" class="modal__form pay">
+        <input type="text" name="name" placeholder="Ваше имя*" required class="modal__input">
+        <input type="text" name="tel" placeholder="Номер телефона*" required class="modal__input">
+
+        <div class="modal__select">
+          <select name="delivery[]">
+            <option selected disabled>Способ доставки</option>
+            <option value="courier">Доставка курьером</option>
+            <option value="transport">Транспортная компания</option>
+            <option value="post">Доставка почтой России</option>
+          </select>
+        </div>
+
+        <div class="modal__select">
+          <select name="pay[]">
+            <option selected disabled>Способ оплаты</option>
+            <option value="cash">Наличные</option>
+            <option value="card">Карта</option>
+          </select>
+        </div>
+
+        <input type="text" name="address" placeholder="Ваш адрес" required class="modal__input">
+        <button class="modal__btn">Отправить</button>
+      </form>
+
+    </div>
+  </div>
+</div>

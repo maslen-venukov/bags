@@ -1,0 +1,43 @@
+@include('html/_header.html')
+
+  <main class="main">
+
+    <div class="hero hero--basket">
+      <div class="container">
+        <div class="hero__inner">
+
+          <ul class="hero__breadcrumbs breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="/" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="basket.html" class="breadcrumbs__link">Корзина</a>
+            </li>
+          </ul>
+
+          <h1 class="hero__title">Корзина</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="basket">
+      <div class="container">
+        <div class="basket__inner">
+
+          <ul class="basket__list"></ul>
+
+          <footer class="basket__footer">
+            <button class="basket__pay" data-modal>Оплатить</button>
+            <p class="basket__total">Итого <span class="basket__price">6.000 руб</span></p>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+
+    @include('html/_modal.html')
+
+  </main>
+
+@include('html/_footer.html')

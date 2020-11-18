@@ -1,0 +1,57 @@
+<section class="recommended section">
+  <div class="container">
+    <div class="recommended__inner">
+
+      <h2 class="recommended__title section__title">Рекомендуемые</h2>
+
+      <ul class="recommended__list">
+        <li class="recommended__item">
+          @include('_card.html', {
+            "delivery": 10,
+            "rating": 4,
+            "img": "img/product-1.jpg",
+            "price": "500 руб",
+            "name": "Angel Eye Lontano Molto"
+          })
+        </li>
+        <li class="recommended__item">
+          @include('_card.html', {
+            "delivery": 5,
+            "rating": 3,
+            "img": "img/product-2.jpg",
+            "price": "1.000 руб",
+            "name": "Esse Al Di La Citta"
+          })
+        </li>
+        <li class="recommended__item">
+          @include('_card.html', {
+            "delivery": 7,
+            "rating": 5,
+            "img": "img/product-1.jpg",
+            "price": "2.500 руб",
+            "name": "Labbra Montagne Di Parole"
+          })
+        </li>
+        <li class="recommended__item">
+          @include('_card.html', {
+            "delivery": 8,
+            "rating": 3,
+            "img": "img/product-2.jpg",
+            "price": "3.500 руб",
+            "name": "Econica Nella Terra Delle"
+          })
+        </li>
+      </ul>
+
+      <div class="recommended__imgs">
+        <div class="recommended__img">
+          <img src="img/recommended-img-1.jpg" alt="">
+        </div>
+        <div class="recommended__img">
+          <img src="img/recommended-img-2.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,86 @@
+@include('html/_header.html')
+
+  <main class="main">
+
+    <div class="hero hero--wish">
+      <div class="container">
+        <div class="hero__inner">
+
+          <ul class="hero__breadcrumbs breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="/" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="single.html" class="breadcrumbs__link">Товар 1</a>
+            </li>
+          </ul>
+
+          <h1 class="hero__title">Каталог</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="single">
+      <div class="container">
+        <div class="single__inner">
+
+          <div class="single__content">
+
+            <div class="single__images">
+              <div class="single__main-img">
+                <img src="http://placebeard.it/400x300" alt="">
+              </div>
+              <ul class="single__img-switchers img-switchers">
+                <li class="img-switchers__item">
+                  <img src="http://placebeard.it/400x300" alt="">
+                </li>
+                <li class="img-switchers__item">
+                  <img src="http://placebeard.it/300x300" alt="">
+                </li>
+                <li class="img-switchers__item">
+                  <img src="http://placebeard.it/300x400" alt="">
+                </li>
+              </ul>
+            </div>
+
+            <div class="single__info">
+              <h3 class="single__title">Сумка женская</h3>
+              <div class="single__evaluation">
+                <div class="single__rating rating" data-rating="4">
+                  <svg data-star="5" xmlns="http://www.w3.org/2000/svg"><path d="M18.386 6.338l-5.696-.82L10.144.395a.724.724 0 00-1.288 0L6.31 5.517l-5.696.821a.71.71 0 00-.397 1.215l4.121 3.986-.973 5.629a.706.706 0 00.285.696.72.72 0 00.755.054L9.5 15.26l5.095 2.657c.139.073.3.098.455.071a.712.712 0 00.586-.821l-.974-5.629 4.121-3.986a.71.71 0 00-.397-1.215z"/></svg>
+                  <svg data-star="4" xmlns="http://www.w3.org/2000/svg"><path d="M18.386 6.338l-5.696-.82L10.144.395a.724.724 0 00-1.288 0L6.31 5.517l-5.696.821a.71.71 0 00-.397 1.215l4.121 3.986-.973 5.629a.706.706 0 00.285.696.72.72 0 00.755.054L9.5 15.26l5.095 2.657c.139.073.3.098.455.071a.712.712 0 00.586-.821l-.974-5.629 4.121-3.986a.71.71 0 00-.397-1.215z"/></svg>
+                  <svg data-star="3" xmlns="http://www.w3.org/2000/svg"><path d="M18.386 6.338l-5.696-.82L10.144.395a.724.724 0 00-1.288 0L6.31 5.517l-5.696.821a.71.71 0 00-.397 1.215l4.121 3.986-.973 5.629a.706.706 0 00.285.696.72.72 0 00.755.054L9.5 15.26l5.095 2.657c.139.073.3.098.455.071a.712.712 0 00.586-.821l-.974-5.629 4.121-3.986a.71.71 0 00-.397-1.215z"/></svg>
+                  <svg data-star="2" xmlns="http://www.w3.org/2000/svg"><path d="M18.386 6.338l-5.696-.82L10.144.395a.724.724 0 00-1.288 0L6.31 5.517l-5.696.821a.71.71 0 00-.397 1.215l4.121 3.986-.973 5.629a.706.706 0 00.285.696.72.72 0 00.755.054L9.5 15.26l5.095 2.657c.139.073.3.098.455.071a.712.712 0 00.586-.821l-.974-5.629 4.121-3.986a.71.71 0 00-.397-1.215z"/></svg>
+                  <svg data-star="1" xmlns="http://www.w3.org/2000/svg"><path d="M18.386 6.338l-5.696-.82L10.144.395a.724.724 0 00-1.288 0L6.31 5.517l-5.696.821a.71.71 0 00-.397 1.215l4.121 3.986-.973 5.629a.706.706 0 00.285.696.72.72 0 00.755.054L9.5 15.26l5.095 2.657c.139.073.3.098.455.071a.712.712 0 00.586-.821l-.974-5.629 4.121-3.986a.71.71 0 00-.397-1.215z"/></svg>
+                </div>
+                <span class="single__reviews">1 отзыв</span>
+              </div>
+              <h4 class="single__price">2.000 руб</h4>
+              <p class="single__text">Сумка с клапаном на кнопке на цепочке, 2 отделения, внутри карман перегородка на молнии и карман для телефона.</p>
+              <div class="single__color-switchers color-switchers">
+                <h4 class="color-switchers__title">Цвет: <span>голубой</span></h4>
+                <ul class="color-switchers__list">
+                  <li class="color-switchers">
+                    <img src="http://placebeard.it/50x50" alt="">
+                  </li>
+                  <li class="color-switchers">
+                    <img src="http://placebeard.it/50x50" alt="">
+                  </li>
+                </ul>
+              </div>
+              <button class="single__basket">В корзину</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+@include('html/_footer.html')

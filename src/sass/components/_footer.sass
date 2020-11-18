@@ -1,0 +1,50 @@
+.footer
+  margin-top: auto
+  background: #4d4d4d
+  padding: 60px 0
+  &__inner
+    display: flex
+    align-items: center
+  &__nav
+    color: #fff
+    margin-left: auto
+    .nav__link
+      &::after
+        background: #fff
+  &__social
+    margin-left: auto
+
+.social
+  &__list
+    display: flex
+  &__item
+    &:not(:last-child)
+      margin-right: 20px
+  &__link
+    position: relative
+    display: block
+    width: 40px
+    height: 40px
+    background: #696969
+    border-radius: 50%
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+    &--instagram
+      &::after
+        width: 19px
+        height: 19px
+        background: url(../img/icons/instagram.svg) center / cover no-repeat
+    &--vk
+      &::after
+        width: 21px
+        height: 12px
+        background: url(../img/icons/vk.svg) center / cover no-repeat
+    &--telegram
+      &::after
+        width: 20px
+        height: 18px
+        background: url(../img/icons/telegram.svg) center / cover no-repeat

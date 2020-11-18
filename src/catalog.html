@@ -1,0 +1,37 @@
+@include('html/_header.html')
+
+  <main class="main">
+
+    <div class="hero hero--catalog">
+      <div class="container">
+        <div class="hero__inner">
+
+          <ul class="hero__breadcrumbs breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="/" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+            </li>
+          </ul>
+
+          <h1 class="hero__title">Каталог</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog">
+      <div class="container">
+        <div class="catalog__inner">
+
+          @include('html/_filters.html')
+          @include('html/_grid.html')
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+@include('html/_footer.html')
