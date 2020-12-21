@@ -1,14 +1,12 @@
 Интернет магазин Bags
 ====================
-В проекте применяется компонентный подход
+Stack
 --------------------
 Gulp, Sass, Webpack, FileInclude
 
-Установка
+Install
 --------------------
-- Клонировать репозиторий
-
-  > git clone https://github.com/maslen-venukov/bags.git
+- git clone https://github.com/maslen-venukov/bags.git
 
 - npm i
 
